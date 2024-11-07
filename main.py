@@ -1,6 +1,3 @@
-import sys
-sys.path.append("./")
-
 from langgraph.graph import END, MessageGraph
 from langchain_core.messages import BaseMessage, HumanMessage
 from typing import List, Sequence
