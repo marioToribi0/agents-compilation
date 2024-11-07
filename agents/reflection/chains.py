@@ -1,10 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_ollama import ChatOllama
-from langchain_openai import ChatOpenAI
-from dotenv import load_dotenv
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-
-load_dotenv()
+from config import BASE_URL_OLLAMA
 
 reflection_prompt = ChatPromptTemplate.from_messages(
     [
@@ -32,6 +28,6 @@ generation_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-llm = ChatOllama(model="llama3.1", base_url="http://192.168.18.10:11434/")
+llm = ChatOllama(model="llama3.1", base_url=BASE_URL_OLLAMA)
 generate_chain = generation_prompt | llm
 reflect_chain = reflection_prompt | llm

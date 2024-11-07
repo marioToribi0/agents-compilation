@@ -1,11 +1,10 @@
-from langchain_ollama import ChatOllama
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from dotenv import load_dotenv
+import sys
+sys.path.append("./")
+
 from langgraph.graph import END, MessageGraph
 from langchain_core.messages import BaseMessage, HumanMessage
 from typing import List, Sequence
 from chains import generate_chain, reflect_chain
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 REFLECT = "reflect"
 GENERATE = "generate"
@@ -34,7 +33,6 @@ builder.add_edge(REFLECT, GENERATE) # When REFLECT is executed GENERATE is the n
 graph = builder.compile()
 
 if __name__ == "__main__":
-    load_dotenv()
     inputs = HumanMessage(content="""Make this tweet better:"
                                     @LangChainAI
             — newly Tool Calling feature is seriously underrated.
@@ -45,4 +43,5 @@ if __name__ == "__main__":
 
                                   """)
     response = graph.invoke(inputs)
-    # print(response)
+    print("Tweet improve: ")
+    print(response[-1].content)

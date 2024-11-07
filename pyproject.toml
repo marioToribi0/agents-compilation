@@ -15,6 +15,7 @@ langchain-openai = "^0.2.6"
 langgraph = "^0.2.45"
 langchain-ollama = "^0.2.0"
 grandalf = "^0.8"
+python-decouple = "^3.8"
 
 
 [build-system]
