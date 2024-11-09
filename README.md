@@ -1,11 +1,3 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Agent Compilation" />
-
-  &#xa0;
-
-  <!-- <a href="https://reflectionagent.netlify.app">Demo</a> -->
-</div>
-
 <h1 align="center">Agent Compilation</h1>
 
 <p align="center">
