@@ -16,6 +16,9 @@ langgraph = "^0.2.45"
 langchain-ollama = "^0.2.0"
 grandalf = "^0.8"
 python-decouple = "^3.8"
+langchain-groq = "^0.2.1"
+langchain-community = "^0.3.5"
+duckduckgo-search = "^6.3.3"
 
 
 [build-system]

@@ -1,6 +1,5 @@
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_ollama import ChatOllama
-from config import BASE_URL_OLLAMA
+from llm_models import ChatModels
 
 reflection_prompt = ChatPromptTemplate.from_messages(
     [
@@ -28,6 +27,6 @@ generation_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-llm = ChatOllama(model="llama3.1", base_url=BASE_URL_OLLAMA)
+llm = ChatModels.OLLAMA("llama3.1")
 generate_chain = generation_prompt | llm
 reflect_chain = reflection_prompt | llm
