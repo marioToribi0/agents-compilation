@@ -32,6 +32,8 @@ builder.add_edge(REFLECT, GENERATE) # When REFLECT is executed GENERATE is the n
 
 graph = builder.compile()
 
+graph.get_graph().draw_mermaid_png(output_file_path="tweet-reflection-agent.png")
+
 if __name__ == "__main__":
     inputs = HumanMessage(content="""Make this tweet better:"
                                     @LangChainAI
