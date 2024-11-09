@@ -9,10 +9,10 @@
 <h1 align="center">Agent Compilation</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mariotoribi0/agents-compilation?color=56BEB8">
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mariotoribi0/agents-compilation?color=56BEB8">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mariotoribi0/agents-compilation?color=56BEB8">
-  <img alt="License" src="https://img.shields.io/github/license/mariotoribi0/agents-compilation?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mariotoribi0/agents-compilation">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mariotoribi0/agents-compilation">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mariotoribi0/agents-compilation">
+  <img alt="License" src="https://img.shields.io/github/license/mariotoribi0/agents-compilation">
 </p>
 
 <p align="center">
